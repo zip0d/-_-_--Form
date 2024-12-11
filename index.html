@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="feedback-container">
+        <h1>Форма обратной связи</h1>
+        <form id="feedback-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+            
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" placeholder="Ваш email" required>
+            
+            <label for="rating">Оцените наш продукт:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">Отлично</option>
+                <option value="4">Хорошо</option>
+                <option value="3">воистине</option>
+                <option value="2">Мечта</option>
+                <option value="1">норм</option>
+            </select>
+            
+            <label for="category">Категория:</label>
+            <select id="category" name="category" required>
+                <option value="usability">Удобство использования</option>
+                <option value="performance">Производительность</option>
+                <option value="design">Дизайн</option>
+                <option value="features">Функционал</option>
+            </select>
+            
+            <label for="comments">Ваши комментарии:</label>
+            <textarea id="comments" name="comments" rows="5" placeholder="Оставьте свои предложения или замечания..." required></textarea>
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
